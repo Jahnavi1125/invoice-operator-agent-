@@ -1,6 +1,10 @@
 # Invoice Operator: an autonomous AI worker for company tasks
 
 Submission for the CentrAlign AI Founding Engineer problem ("AI Employee / Autonomous Company Operator").
+
+**Demo video:** `<ADD LINK HERE>`
+**Repository:** `<ADD GITHUB LINK HERE>`
+
 ## What it does
 
 You give the agent a plain-English request, for example:
@@ -63,7 +67,7 @@ Runs on the mock app with the agent model below. Step counts and times vary betw
 | Initech (different vendor, same code) | Saved, verifier PASS | PASS | 22 |
 | Acme, human approves | Approval asked, saved | PASS | 14 |
 | Acme, human rejects | Approval asked, nothing saved | PASS | 6 |
-| Globex with an injected 503 error on the first Save | Agent retries and saves | `<FILL IN AFTER RUNNING THE DEMO>` | `<...>` |
+| Globex with an injected 503 error on the first Save | Agent retries and saves, verifier PASS | PASS | 18 |
 
 Run the evals with `python evals/run_evals.py` (or `python evals/run_evals.py 2 3` for chosen cases).
 
@@ -139,7 +143,7 @@ Useful extras:
 - **Verifier is tied to the mock app.** It parses this app's HTML table and these PDFs' text layout.
 - **Model dependence.** Behaviour, step counts and speed vary with the model. The free tier has low daily limits and occasional overload errors, which cause slow runs and retries.
 - **No sandboxing.** The agent can only read files under `data/`, but browser actions run on the real local machine.
-- **Approval is a terminal prompt.** There is no web UI for approvals or no timeout if nobody answers.
+- **Approval is a terminal prompt.** There is no web UI for approvals and no timeout if nobody answers.
 
 ## What I would build next
 
