@@ -1,10 +1,4 @@
 # Invoice Operator: an autonomous AI worker for company tasks
-
-Submission for the CentrAlign AI Founding Engineer problem ("AI Employee / Autonomous Company Operator").
-
-**Demo video:** `<ADD LINK HERE>`
-**Repository:** `<ADD GITHUB LINK HERE>`
-
 ## What it does
 
 You give the agent a plain-English request, for example:
