@@ -76,23 +76,10 @@ Run the evals with `python evals/run_evals.py` (or `python evals/run_evals.py 2 
 - **Check, then enter** ("if INT-3090 is not in the system, enter it"): found it missing, entered it with the correct values, and checked the list.
 - **Missing data** ("find the latest invoice from Hooli Corp"): searched the invoice files, reported that none exist for that vendor, and entered nothing.
 
-## Evidence
-
-Failure recovery (injected 503, then retry and success):
-
-![Failure recovery](docs/failure-recovery.png)
-
-Independent verifier:
-
-![Verifier](docs/verifier-pass.png)
-
-Eval results:
-
-![Evals](docs/eval-results.png)
 
 ## Demo video
 
-The video (about 4 to 5 minutes) shows:
+The video shows:
 
 1. A normal run on Globex, followed by the independent verifier.
 2. The approval gate on Acme: approved (saved) and rejected (nothing saved).
